@@ -1,5 +1,6 @@
-package com.srhdp.dmdbclient.data
+package com.srhdp.dmdbclient.data.model.movie
 import com.google.gson.annotations.SerializedName
+import com.srhdp.dmdbclient.data.model.movie.Movie
 
 data class MovieList(
     @SerializedName("results")

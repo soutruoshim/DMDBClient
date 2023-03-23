@@ -1,8 +1,8 @@
 package com.srhdp.dmdbclient.data.api
 
-import com.srhdp.dmdbclient.data.ArtistList
-import com.srhdp.dmdbclient.data.MovieList
-import com.srhdp.dmdbclient.data.TvShowList
+import com.srhdp.dmdbclient.data.model.artist.ArtistList
+import com.srhdp.dmdbclient.data.model.movie.MovieList
+import com.srhdp.dmdbclient.data.model.tvshow.TvShowList
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
