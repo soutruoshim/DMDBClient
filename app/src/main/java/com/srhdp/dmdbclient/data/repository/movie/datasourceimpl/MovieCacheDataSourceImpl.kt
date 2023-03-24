@@ -12,5 +12,4 @@ class MovieCacheDataSourceImpl(): MovieCacheDataSource {
         movieList.clear()
         movieList = ArrayList(movies)
     }
-
 }
