@@ -27,15 +27,15 @@ class MovieRepositoryImpl(
     }
 
     suspend fun getMoviesFromAPI():List<Movie>{
-        lateinit var movieList:List<Movie>
+        lateinit var movieList: List<Movie>
         try {
-            val response:Response<MovieList> = movieRemoteDataSource.getMovies()
-            val body:MovieList? = response.body()
-            if(body != null){
+            val response = movieRemoteDataSource.getMovies()
+            val body = response.body()
+            if(body!=null){
                 movieList = body.movies
             }
-        }catch (exception:Exception){
-              Log.i("MyTag", exception.message.toString())
+        } catch (exception: Exception) {
+            Log.i("MyTag", exception.message.toString())
         }
         return movieList
     }
