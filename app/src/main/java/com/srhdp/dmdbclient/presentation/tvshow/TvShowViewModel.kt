@@ -16,7 +16,7 @@ class TvShowViewModel(
         emit(tvShowList)
     }
 
-    fun updateMovies() = liveData {
+    fun updateTvShow() = liveData {
          val tvShowList:List<TvShow>? = updateTvShowUseCase.execute()
          emit(tvShowList)
     }
